@@ -1,0 +1,89 @@
+(smartmatch) LESTERs-MacBook-Air:bin LESTERMOK$ gcloud init
+Welcome! This command will take you through the configuration of gcloud.
+
+Your current configuration has been set to: [default]
+
+You can skip diagnostics next time by using the following flag:
+  gcloud init --skip-diagnostics
+
+Network diagnostic detects and fixes local network connection issues.
+Checking network connection...done.                                            
+Reachability Check passed.
+Network diagnostic (1/1 checks) passed.
+
+You must log in to continue. Would you like to log in (Y/n)?  Y
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&access_type=offline
+
+
+You are logged in as: [537837.social@gmail.com].
+
+This account has no projects.
+
+Would you like to create one? (Y/n)?  Y
+
+Enter a Project ID. Note that a Project ID CANNOT be changed later.
+Project IDs must be 6-30 characters (lowercase ASCII, digits, or
+hyphens) in length and start with a lowercase letter. smartmatch
+WARNING: Project creation failed: HttpError accessing <https://cloudresourcemanager.googleapis.com/v1/projects?alt=json>: response: <{'status': '409', 'content-length': '269', 'x-xss-protection': '1; mode=block', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'vary': 'Origin, X-Origin, Referer', 'server': 'ESF', '-content-encoding': 'gzip', 'cache-control': 'private', 'date': 'Sat, 19 Aug 2017 01:59:56 GMT', 'x-frame-options': 'SAMEORIGIN', 'alt-svc': 'quic=":443"; ma=2592000; v="39,38,37,35"', 'content-type': 'application/json; charset=UTF-8'}>, content <{
+  "error": {
+    "code": 409,
+    "message": "Requested entity already exists",
+    "status": "ALREADY_EXISTS",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ResourceInfo",
+        "resourceName": "projects/smartmatch"
+      }
+    ]
+  }
+}
+>
+Please make sure to create the project [smartmatch] using
+    $ gcloud projects create smartmatch
+or change to another project using
+    $ gcloud config set project <PROJECT ID>
+Your current project has been set to: [smartmatch].
+
+Not setting default zone/region (this feature makes it easier to use
+[gcloud compute] by setting an appropriate default value for the
+--zone and --region flag).
+See https://cloud.google.com/compute/docs/gcloud-compute section on how to set
+default compute region and zone manually. If you would like [gcloud init] to be
+able to do this for you the next time you run it, make sure the
+Compute Engine API is enabled for your project on the
+https://console.developers.google.com/apis page.
+
+Created a default .boto configuration file at [/Users/LESTERMOK/.boto]. See this file and
+[https://cloud.google.com/storage/docs/gsutil/commands/config] for more
+information about configuring Google Cloud Storage.
+Your Google Cloud SDK is configured and ready to use!
+
+* Commands that require authentication will use 537837.social@gmail.com by default
+* Commands will reference project `smartmatch` by default
+Run `gcloud help config` to learn how to change individual settings
+
+This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+Run `gcloud topic configurations` to learn more.
+
+Some things to try next:
+
+* Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+* Run `gcloud topic -h` to learn about advanced features of the SDK like arg files and output formatting
+
+
+
+(smartmatch) LESTERs-MacBook-Air:bin LESTERMOK$ gcloud auth application-default login
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&prompt=select_account&response_type=code&client_id=764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&access_type=offline
+
+
+
+Credentials saved to file: [/Users/LESTERMOK/.config/gcloud/application_default_credentials.json]
+
+These credentials will be used by any library that requests
+Application Default Credentials.
+
