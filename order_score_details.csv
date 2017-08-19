@@ -1,0 +1,4 @@
+'orderid': 'shirt03', 'factory': 'fac4', 't shirt': '1.0', 'clothing': '0.99', 'red': 0, 'sleeve': '0.64', 'product': 0, 'text': 0, 'active shirt': 0, 'font': 0, 'top': '0.74', 'score': '3.37'
+'orderid': 'shirt01', 'factory': 'fac1', 't shirt': '0.99', 'clothing': 0, 'red': 0, 'sleeve': '0.63', 'product': 0, 'text': '0.05', 'active shirt': 0, 'font': 0, 'top': '0.69', 'score': '2.36'
+'orderid': 'shirt04', 'factory': 'fac2', 't shirt': 0, 'clothing': '1.0', 'red': 0, 'sleeve': '0.44', 'product': 0, 'text': 0, 'active shirt': 0, 'font': 0, 'top': 0, 'score': '1.44'
+'orderid': 'shirt05', 'factory': 'fac3', 't shirt': 0, 'clothing': 0, 'red': 0, 'sleeve': '0.64', 'product': 0, 'text': 0, 'active shirt': 0, 'font': 0, 'top': 0, 'score': '0.64'
