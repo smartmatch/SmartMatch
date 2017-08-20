@@ -68,12 +68,12 @@ image = types.Image(content=content)
 response = client.label_detection(image=image)
 labels = response.label_annotations
 
-os.remove(''.join(["/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/", str(sys.argv[1]).split('.')[0], ".csv"]))
+#os.remove(''.join(["/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/", str(sys.argv[1]).split('.')[0], ".csv"]))
 
 d2={}
 d2.clear()
 
-file = open(''.join(["/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/", str(sys.argv[1]).split('.')[0], ".csv"]),'a')
+file = open(''.join(["/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/", str(sys.argv[1]).split('.')[0], ".csv"]),'w')
 
 for label in labels:
     file.write(''.join([label.description, ",", str(round(label.score,9)), "\n"])) 
@@ -106,18 +106,18 @@ for fac_item in range(0,len(fac_list)):
 
 sorted_fac_result_list = sorted(fac_result_list, key=lambda d: d['score'], reverse=True)
 
-os.remove("/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/factory_evaluation.csv")
+#os.remove("/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/factory_evaluation.csv")
 
-result_file = open('/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/factory_evaluation.csv','a')
+result_file = open('/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/factory_evaluation.csv','w')
 
 for result in range(0,len(sorted_fac_result_list)):
     result_file.write(''.join([sorted_fac_result_list[result]["facid"], ",", sorted_fac_result_list[result]["score"], "\n"])) 
     
 result_file.close()
 
-os.remove("/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/fac_score_details.csv")
+#os.remove("/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/fac_score_details.csv")
 
-score_file = open('/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/fac_score_details.csv','a')
+score_file = open('/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/fac_score_details.csv','w')
 
 for score_result in range(0,len(sorted_fac_result_list)):
 	score_file.write(str(sorted_fac_result_list[score_result]).strip("{").strip("}"))
@@ -151,18 +151,18 @@ for order in range(0,len(dlist)):
 	
 sorted_result_list = sorted(result_list, key=lambda d: d['score'], reverse=True)
 
-os.remove("/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/factory_ranking.csv")
+#os.remove("/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/factory_ranking.csv")
 
-result_file = open('/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/factory_ranking.csv','a')
+result_file = open('/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/factory_ranking.csv','w')
 
 for result in range(0,len(sorted_result_list)):
     result_file.write(''.join([sorted_result_list[result]["orderid"], ",", sorted_result_list[result]["factory"], ",", sorted_result_list[result]["score"], "\n"])) 
     
 result_file.close()
 
-os.remove("/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/order_score_details.csv")
+#os.remove("/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/order_score_details.csv")
 
-score_file = open('/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/order_score_details.csv','a')
+score_file = open('/Users/LESTERMOK/Documents/Virtualenvs/smartmatch/smartmatch/order_score_details.csv','w')
 
 for score_result in range(0,len(sorted_result_list)):
 	score_file.write(str(sorted_result_list[score_result]).strip("{").strip("}"))
